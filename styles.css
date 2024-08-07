@@ -1,0 +1,138 @@
+<style>
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('Lentes.jpeg') no-repeat center 20% fixed; /* Ajusta el valor de 20% según sea necesario */
+        background-size: cover;
+        color: white;
+        min-height: 100vh; /* Para ocupar al menos el 100% del viewport */
+        position: relative; /* Importante para que el footer quede al fondo */
+    }
+
+    /* Estilos del header */
+    header {
+        background-color: rgba(51, 51, 51, 0.8);
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    /* Estilos del menú de navegación */
+    nav {
+        background-color: rgba(68, 68, 68, 0.8);
+        color: white;
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+
+    /* Estilos del contenido principal */
+    main {
+        padding: 2em;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 1em;
+        border-radius: 10px;
+    }
+
+    /* Estilos de las secciones */
+    .contact-section,
+    .personal-contact,
+    .project-section,
+    .maintenance-section {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        padding: 2em;
+        border-radius: 10px;
+        margin: 2em 0;
+    }
+
+    .contact-section h2,
+    .personal-contact h2,
+    .project-section h2,
+    .maintenance-section h2 {
+        margin-top: 0;
+    }
+
+    /* Estilos del formulario de contacto */
+    .contact-section form {
+        display: grid;
+        gap: 1em;
+    }
+
+    .contact-section label {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .contact-section input[type="submit"] {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.7em 1em;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .contact-section input[type="submit"]:hover {
+        background-color: #555;
+    }
+
+    /* Estilos de la sección de contacto personal */
+    .personal-contact {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        padding: 2em;
+        border-radius: 10px;
+        margin: 2em 0;
+    }
+
+    .personal-contact h2 {
+        margin-top: 0;
+    }
+
+    .personal-contact p {
+        margin-bottom: 0.5em;
+    }
+
+    .personal-contact strong {
+        font-weight: bold;
+    }
+
+    .personal-contact a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .personal-contact a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilos del footer */
+    footer {
+        background-color: rgba(51, 51, 51, 0.8);
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+</style>

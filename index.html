@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Lentes.jpeg') no-repeat center 20% fixed;
+            background-size: cover;
+            color: white;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Estilos del header */
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        /* Estilos del menú de navegación */
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Estilos del contenido principal */
+        main {
+            padding: 2em;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 1em;
+            border-radius: 10px;
+        }
+
+        /* Estilos del footer */
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilos de las secciones */
+        .contact-section,
+        .personal-contact,
+        .project-section,
+        .maintenance-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 2em;
+            border-radius: 10px;
+            margin: 2em 0;
+        }
+
+        .contact-section h2,
+        .personal-contact h2,
+        .project-section h2,
+        .maintenance-section h2 {
+            margin-top: 0;
+        }
+
+        .project-section .project-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .project-section .project-item .project-info {
+            flex: 1;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .project-section .project-item .project-info img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-section .project-item .project-info p,
+        .maintenance-section p {
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SafeZone - Caminar al futuro cuidando tus pasos</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quienes somos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contactanos">Contactanos</a>
+        <a href="#mantenimiento">Mantenimiento</a>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>¡Bienvenido a SafeZone! Descubre cómo estamos revolucionando la seguridad al caminar.</p>
+        </section>
+        <section id="quienes-somos">
+            <h2>Quienes somos</h2>
+            <p>¡Hola! Somos el equipo 2, y en esta página les queremos presentar nuestro proyecto.</p>
+        </section>
+        <section id="proyectos" class="project-section">
+            <h2>Proyectos</h2>
+            <div class="project-item">
+                <div class="project-info">
+                    <img src="Lentesarmason.jpeg" alt="Proyecto 1">
+                    <p>Este armazón es el comienzo de nuestra idea.</p>
+                </div>
+                <div class="project-info">
+                    <img src="lentesarmason2.jpeg" alt="Proyecto 2">
+                    <p>La idea que tenemos es implementar un botón de emergencia.</p>
+                </div>
+                <div class="project-info">
+                    <img src="lwntwa dibujo prototipo.jpeg" alt="Proyecto 3">
+                    <p>Un par de sensores y bocinas para poder alertar a la persona de objetos cerca de él con un cierto rango de distancia.</p>
+                </div>
+                <div class="project-info">
+                    <img src="lentesdefrente.jpeg" alt="Proyecto 4">
+                    <p>También tenemos la idea de integrar un GPS de dictado por voz para que la persona pueda ubicarse en el lugar donde está y poder saber hacia qué dirección y a cuánta distancia está su destino.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contactanos" class="contact-section">
+            <h2>Contactanos</h2>
+            <form action="https://formspree.io/f/xyzgwrbw" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section id="mantenimiento" class="maintenance-section">
+            <h2>Mantenimiento Preventivo</h2>
+            <p>- Inspección: Revisión visual y funcional de componentes para identificar desgaste o problemas.</p>
+            <p>- Limpieza: Eliminación de polvo y residuos que puedan dañar el equipo internamente.</p>
+            <p>- Pruebas: Verificación del funcionamiento adecuado mediante pruebas operativas.</p>
+            <p>- Reemplazo de piezas: Sustitución de piezas desgastadas o dañadas antes de que fallen.</p>
+            <p>- Verificación de estética: Parte plástica del lente.</p>
+
+            <h2>Mantenimiento Correctivo</h2>
+            <p>- Descubrir patrones relacionados con el problema: darle el mantenimiento adecuado e investigar si sus fallas están creadas por el mismo motivo</p>
+            <p>- Reducir el riesgo operativo: Evitar que se dañe el medidor de volumen</p>
+            <p>- Mejorar la imagen: Dar una buena impresión al igual que contenga una buena calidad</p>
+            <p>- Reducir las operaciones innecesarias en el tiempo</p>
+            <p>- Evaluar las operaciones, mejorar su planificación y establecer procedimientos de cambios eficientes</p>
+
+            <h2>Mantenimiento Correctivo</h2>
+            <p>1. *Diagnóstico del Problema*:
+                - *Inspección Visual*: Revisar los componentes físicos de los lentes y sensores para identificar daños evidentes, como cables sueltos, componentes rotos o conexiones defectuosas.
+                - *Pruebas Funcionales*: Realizar pruebas para verificar el funcionamiento de los sensores, la respuesta del sistema de vibración o audio, y la conectividad con otros dispositivos (si aplica).</p>
+            
+            <p>2. *Identificación de la Falla*:
+                - *Lectura de Códigos de Error*: Si el sistema incluye una interfaz de usuario o una aplicación, verificar si hay códigos de error o mensajes de diagnóstico.
+                - *Uso de Herramientas de Diagnóstico*: Emplear herramientas específicas para medir señales eléctricas, verificar la integridad de los circuitos y comprobar el estado de los componentes electrónicos.</p>
+            
+            <p>3. *Reparación de Componentes*:
+                - *Reemplazo de Piezas Defectuosas*: Sustituir sensores, cables, baterías o cualquier otro componente que se haya identificado como defectuoso.
+                - *Reparación de Conexiones*: Soldar o asegurar conexiones eléctricas que se hayan desprendido o aflojado.
+                - *Actualización de Software/Firmware*: Si el problema es de software, actualizar o reinstalar el software o firmware del sistema.</p>
+            
+            <p>4. *Verificación Post-Reparación*:
+                - *Pruebas de Funcionamiento*: Realizar pruebas exhaustivas para asegurarse de que los lentes y sensores funcionan correctamente después de la reparación.
+                - *Recalibración*: Ajustar y recalibrar los sensores y sistemas para garantizar precisión en la detección de obstáculos y otras funciones.</p>
+            
+            <p>5. *Registro de Mantenimiento*:
+                - *Documentación*: Registrar las fallas encontradas, las reparaciones realizadas, y las piezas reemplazadas para llevar un historial de mantenimiento que pueda ser útil para futuras intervenciones.</p>
+
+            <h3>Consideraciones Especiales</h3>
+            <p>- *Seguridad del Usuario*: Asegurarse de que todas las reparaciones mantengan la seguridad del usuario, evitando cualquier riesgo de lesiones.</p>
+            <p>- *Componentes Específicos*: Algunos sensores pueden requerir técnicas específicas de manejo y reparación debido a su delicadeza o complejidad.</p>
+            <p>- *Proveedores y Garantías*: Trabajar con proveedores autorizados y respetar las garantías de los componentes para no invalidar la cobertura.</p>
+
+            <h3>Ejemplo de Mantenimiento Correctivo</h3>
+            <p>Imaginemos que un usuario reporta que los lentes no detectan correctamente los obstáculos en su entorno. Los pasos a seguir serían:</p>
+            <ol>
+                <li>*Inspección Visual*: Verificar si los sensores están cubiertos de suciedad o dañados físicamente.</li>
+                <li>*Pruebas Funcionales*: Conectar los lentes a un software de diagnóstico para identificar problemas en los sensores.</li>
+                <li>*Reemplazo*: Si un sensor está dañado, proceder a su reemplazo.</li>
+                <li>*Actualización de Software*: Asegurarse de que el firmware esté actualizado.</li>
+                <li>*Pruebas*: Realizar pruebas para confirmar que el problema ha sido resuelto.</li>
+                <li>*Documentación*: Registrar el problema y la solución aplicada.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Página Web. Todos los derechos reservados ,M,A,C.</p>
+    </footer>
+</body>
+</html>
